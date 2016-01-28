@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '支付宝福卡--第三方交易市场' });
+  var alipay = req.query.alipay;
+  var from = req.query.from;
+  var to = req.query.to;
+  res.redirect("http://qiuhongbao.cn/result.html?alipay="+alipay+"freak"+"&from="+from+"&to="+to);
 });
 
 module.exports = router;

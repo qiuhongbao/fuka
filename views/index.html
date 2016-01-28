@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>求红包-支付宝福卡第三方交换平台</title>
+        <style>
+            img{
+                width: 150px;
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form action="http://fuka.qiuhongbao.cn" method="get">
+            <h3>您的支付宝账号</h3><input type="text" name="alipay"/>
+            <h3>请选择您需要换入的：</h3>
+            <img src="/public/images/fuqiang.jpg"/><input type="radio" name="to" value="fuqiang"/>
+            <img src="/public/images/hexie.jpg"/><input type="radio" name="to" value="hexie"/>
+            <img src="/public/images/youshan.jpg"/><input type="radio" name="to" value="youshan"/>
+            <img src="/public/images/aiguo.jpg"/><input type="radio" name="to" value="aiguo"/>
+            <img src="/public/images/jingye.jpg"/><input type="radio" name="to" value="jingye"/>
+            
+            <h3>请选择您需要换出的：</h3>
+            <img src="/public/images/fuqiang.jpg"/><input type="radio" name="from" value="fuqiang"/>
+            <img src="/public/images/hexie.jpg"/><input type="radio" name="from" value="hexie"/>
+            <img src="/public/images/youshan.jpg"/><input type="radio" name="from" value="youshan"/>
+            <img src="/public/images/aiguo.jpg"/><input type="radio" name="from" value="aiguo"/>
+            <img src="/public/images/jingye.jpg"/><input type="radio" name="from" value="jingye"/>
+            <p>
+                <button type="submit">排队交换</button>
+            </p>
+        </form>
+    </body>
+</html>
